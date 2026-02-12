@@ -1,100 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+
 <head>
-    <title>Yohanes Fabian - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            margin-top: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            color: #2c3e50;
-        }
-
-        h2 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .contact {
-            background: #3498db;
-            color: white;
-            padding: 10px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            color: gray;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Yohanes Fabian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-<div class="container">
+<body class="bg-gray-950 text-gray-200 font-sans">
 
-    <h1>Yohanes Fabian Suryolaksono</h1>
-    <div class="contact">
-        Email: yohaneabi03@email.com <br>
-        GitHub: github.com/yhfabians <br>
-        No HP: 082132625335
-    </div>
+    <!-- Navbar -->
+    <header class="fixed w-full bg-gray-900/80 backdrop-blur border-b border-gray-800 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide">YF</h1>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#about" class="hover:text-blue-400">Tentang</a>
+                <a href="#skills" class="hover:text-blue-400">Skill</a>
+                <a href="#projects" class="hover:text-blue-400">Project</a>
+                <a href="#contact" class="hover:text-blue-400">Kontak</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="section">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah mahasiswa Teknik Informatika yang tertarik pada pengembangan web dan aplikasi.</p>
-    </div>
+    <main class="pt-28">
 
-    <div class="section">
-        <h2>Pendidikan</h2>
-        <ul>
-            <li>D4 Teknik Informatika - POLITEKNIK NEGERI JEMBER (2024 - Sekarang)</li>
-        </ul>
-    </div>
+        <!-- HERO -->
+        <section class="text-center px-6 py-20">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                Yohanes Fabian
+            </h2>
+            <p class="text-gray-400 text-lg mb-6">
+                Mahasiswa Informatika • Web Developer • Laravel Enthusiast
+            </p>
+            <a href="#projects"
+                class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-medium transition">
+                Lihat Project
+            </a>
+        </section>
 
-    <div class="section">
-        <h2>Keahlian</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>Laravel</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-        </ul>
-    </div>
+        <!-- ABOUT -->
+        <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+            <h3 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">Tentang Saya</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Saya adalah mahasiswa yang memiliki minat dalam pengembangan web.
+                Fokus utama saya adalah membangun aplikasi berbasis Laravel,
+                mengelola database MySQL, serta membuat tampilan modern menggunakan Tailwind CSS.
+            </p>
+        </section>
 
-    <div class="section">
-        <h2>Project</h2>
-        <ul>
-            <li>Sistem Booking Online</li>
-            <li>Website Portofolio</li>
-        </ul>
-    </div>
+        <!-- SKILLS -->
+        <section id="skills" class="bg-gray-900 py-16">
+            <div class="max-w-5xl mx-auto px-6">
+                <h3 class="text-3xl font-semibold mb-10 text-center">Keahlian</h3>
 
-    <div class="footer">
-        © 2026 Yohanes Fabian Suryolaksono
-    </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
+                        <h4 class="font-semibold">Laravel</h4>
+                        <p class="text-sm text-gray-400 mt-2">Framework PHP</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
+                        <h4 class="font-semibold">PHP</h4>
+                        <p class="text-sm text-gray-400 mt-2">Backend</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
+                        <h4 class="font-semibold">MySQL</h4>
+                        <p class="text-sm text-gray-400 mt-2">Database</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
+                        <h4 class="font-semibold">Tailwind</h4>
+                        <p class="text-sm text-gray-400 mt-2">Frontend</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <!-- PROJECTS -->
+        <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+            <h3 class="text-3xl font-semibold mb-10 text-center">Project Saya</h3>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Project 1 -->
+                <div class="border border-gray-800 rounded-lg p-6 hover:border-blue-500 transition">
+                    <h4 class="text-xl font-semibold mb-3">Aplikasi Kasir</h4>
+                    <p class="text-gray-400 mb-4">
+                        Sistem kasir berbasis Laravel dengan fitur transaksi, laporan,
+                        dan manajemen produk.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:underline text-sm">
+                        Lihat GitHub →
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="border border-gray-800 rounded-lg p-6 hover:border-blue-500 transition">
+                    <h4 class="text-xl font-semibold mb-3">Website Portfolio</h4>
+                    <p class="text-gray-400 mb-4">
+                        Website portfolio responsif menggunakan Laravel dan Tailwind.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:underline text-sm">
+                        Lihat GitHub →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="bg-gray-900 py-16">
+            <div class="max-w-3xl mx-auto px-6 text-center">
+                <h3 class="text-3xl font-semibold mb-6">Hubungi Saya</h3>
+                <p class="text-gray-400 mb-6">
+                    Tertarik bekerja sama atau ingin berdiskusi?
+                </p>
+
+                <div class="space-y-3">
+                    <p>Email: <span class="text-blue-400">emailkamu@email.com</span></p>
+                    <p>GitHub: <span class="text-blue-400">github.com/usernamekamu</span></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-6 text-center text-sm text-gray-500">
+        © 2026 Yohanes Fabian • Built with HTML & Tailwind
+    </footer>
 
 </body>
 </html>
